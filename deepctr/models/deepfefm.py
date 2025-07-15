@@ -13,8 +13,8 @@ Reference:
 
 from itertools import chain
 
-from tensorflow.python.keras.models import Model
-from tensorflow.python.keras.layers import Dense, Lambda
+from keras.models import Model
+from keras.layers import Dense, Lambda
 
 from ..feature_column import input_from_feature_columns, get_linear_logit, build_input_features, DEFAULT_GROUP_NAME
 from ..layers.core import PredictionLayer, DNN

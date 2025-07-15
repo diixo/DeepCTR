@@ -8,8 +8,8 @@ Reference:
 """
 
 import tensorflow as tf
-from tensorflow.python.keras.models import Model
-from tensorflow.python.keras.layers import (Concatenate, Dense, Permute, multiply, Flatten)
+from keras.models import Model
+from keras.layers import (Concatenate, Dense, Permute, multiply, Flatten)
 
 from ...feature_column import SparseFeat, VarLenSparseFeat, DenseFeat, build_input_features
 from ...inputs import get_varlen_pooling_list, create_embedding_matrix, embedding_lookup, varlen_embedding_lookup, \

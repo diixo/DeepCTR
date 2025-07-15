@@ -8,14 +8,12 @@ Author:
 
 import numpy as np
 import tensorflow as tf
-from tensorflow.python.keras import backend as K
+from keras import backend as K
 
-try:
-    from tensorflow.python.ops.init_ops import TruncatedNormal, Constant, glorot_uniform_initializer as glorot_uniform
-except ImportError:
-    from tensorflow.python.ops.init_ops_v2 import TruncatedNormal, Constant, glorot_uniform
 
-from tensorflow.python.keras.layers import LSTM, Lambda, Layer, Dropout
+from keras.initializers import TruncatedNormal, Constant, GlorotUniform as glorot_uniform
+
+from keras.layers import LSTM, Lambda, Layer, Dropout
 
 from .core import LocalActivationUnit
 from .normalization import LayerNormalization

@@ -8,8 +8,8 @@ Reference:
 """
 
 import tensorflow as tf
-from tensorflow.python.keras.models import Model
-from tensorflow.python.keras.layers import Dense, Lambda
+from keras.models import Model
+from keras.layers import Dense, Lambda
 
 from ..feature_column import build_input_features, get_linear_logit, input_from_feature_columns, SparseFeat, \
     VarLenSparseFeat

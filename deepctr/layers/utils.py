@@ -6,8 +6,9 @@ Author:
 
 """
 import tensorflow as tf
-from tensorflow.python.keras import backend as K
-from tensorflow.python.keras.layers import Flatten, Layer, Add
+from keras import backend as K
+from keras.layers import Flatten, Layer, Add
+
 from tensorflow.python.ops.lookup_ops import TextFileInitializer
 
 try:
@@ -15,7 +16,7 @@ try:
 except ImportError:
     from tensorflow.python.ops.init_ops_v2 import Zeros, glorot_normal
 
-from tensorflow.python.keras.regularizers import l2
+from keras.regularizers import l2
 
 try:
     from tensorflow.python.ops.lookup_ops import StaticHashTable
