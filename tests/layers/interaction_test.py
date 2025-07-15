@@ -1,9 +1,6 @@
 import pytest
 
-try:
-    from tensorflow.python.keras.utils.generic_utils import CustomObjectScope
-except ImportError:
-    from tensorflow.python.keras.utils import CustomObjectScope
+from keras.utils import CustomObjectScope
 from deepctr import layers
 
 from tests.utils import layer_test
