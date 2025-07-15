@@ -13,7 +13,7 @@ model.load_weights('DeepFM_w.h5')
 To save/load models,just a little different.
 
 ```python
-from tensorflow.python.keras.models import  save_model,load_model
+from tensorflow.python.keras.models import  save_model, load_model
 model = DeepFM()
 save_model(model, 'DeepFM.h5')# save_model, same as before
 

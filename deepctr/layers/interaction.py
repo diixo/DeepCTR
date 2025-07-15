@@ -14,12 +14,8 @@ import tensorflow as tf
 from keras import backend as K
 from keras.backend import batch_dot
 
-try:
-    from tensorflow.python.ops.init_ops import Zeros, Ones, Constant, TruncatedNormal, \
-        glorot_normal_initializer as glorot_normal, \
-        glorot_uniform_initializer as glorot_uniform
-except ImportError:
-    from tensorflow.python.ops.init_ops_v2 import Zeros, Ones, Constant, TruncatedNormal, glorot_normal, glorot_uniform
+
+from keras.initializers import Zeros, Ones, Constant, TruncatedNormal, glorot_normal, glorot_uniform
 
 from keras.layers import Layer, MaxPooling2D, Conv2D, Dropout, Lambda, Dense, Flatten
 from keras.regularizers import l2
